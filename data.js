@@ -1,13 +1,13 @@
 window.dashboardData = {
   currentWeek: 2,
   season: 2026,
-  lastUpdated: "Tuesday, Sep 16, 2026 · Early Read",
+  lastUpdated: "Wednesday, Sep 16, 2026 · 6:45 PM CT Update",
   seasonRecord: { wins: 3, losses: 0, pushes: 0, units: 2.7, avgClv: 1.4, roi: 27 },
   games: [
     {
       id:"det-buf", day:"Thu", time:"7:15 PM CT", away:"DET", awayName:"Detroit Lions", home:"BUF", homeName:"Buffalo Bills",
-      market:"BUF -4.5", total:"53.5", status:"WATCH", confidence:"Medium", audit:"Injury audit active",
-      quick:"Detroit's offensive-line cluster is the swing factor. Buffalo is the cleaner side if multiple Lions linemen remain compromised.",
+      market:"BUF -4.5", total:"54.5", status:"WATCH", confidence:"Medium-High", audit:"Final injury report complete",
+      quick:"Detroit will be without starting G Christian Mahogany and T Blake Miller, with top C Cade Mays already on IR. Buffalo is the cleaner side, but the move from -3 to -4.5 has already captured much of the injury edge.",
       why:[
         "Detroit's OL is the main reason this game is on the radar. Multiple absences or limitations could materially change protection and run efficiency.",
         "Buffalo has home-field, the more stable quarterback environment, and a defense capable of exploiting protection breakdowns.",
@@ -18,7 +18,7 @@ window.dashboardData = {
       matchup:["BUF pass rush vs DET protection", "DET run game vs BUF front", "Josh Allen scramble/extended-play value", "Short-week recovery"],
       injuryNote:"This is the only Week 2 game with a mature injury picture right now. Final designations can upgrade or downgrade the side quickly.",
       marketNote:"WATCH the number. Injury confirmation matters only if the market has not already fully priced it in.",
-      bottom:"Early lean Buffalo, but no official bet until the final Thursday audit is complete."
+      bottom:"WATCH Buffalo -4.5. I would BET at -4 or better; at -4.5 the remaining edge is modest after the market move. Recheck weather and inactives Thursday."
     },
     {
       id:"phi-ten", day:"Sun", time:"12:00 PM CT", away:"PHI", awayName:"Philadelphia Eagles", home:"TEN", homeName:"Tennessee Titans",
@@ -32,8 +32,8 @@ window.dashboardData = {
     },
     {
       id:"pit-ne", day:"Sun", time:"12:00 PM CT", away:"PIT", awayName:"Pittsburgh Steelers", home:"NE", homeName:"New England Patriots",
-      market:"NE -4.5", total:"43.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"We are skeptical of laying more than a field goal with New England after one week. Pittsburgh's defense makes +4.5 interesting if the roster is intact.",
+      market:"NE -5.5", total:"41.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      quick:"The market has moved to Pittsburgh +5.5, which improves the price, but LT Troy Fautanu DNP Wednesday. New England also has OL/secondary issues, so this remains a live underdog watch rather than a bet.",
       why:["The spread asks New England to win by more than a field goal despite limited evidence of a large team-quality gap.","Pittsburgh's defense can create short fields and suppress explosive plays, which increases underdog value.","Week 1 can move perception too quickly; we want to separate sustainable offense from one-game outcomes.","Pittsburgh becomes more attractive if its offensive line and quarterback protection check out."],
       watch:["PIT OL availability","NE offensive injuries","Market move toward +5 or +4","Pressure-rate matchup"],
       matchup:["PIT pass rush vs NE protection","NE run game vs PIT front","Field-position battle","Explosive-play prevention"],
@@ -42,8 +42,8 @@ window.dashboardData = {
     },
     {
       id:"min-chi", day:"Sun", time:"12:00 PM CT", away:"MIN", awayName:"Minnesota Vikings", home:"CHI", homeName:"Chicago Bears",
-      market:"CHI -5.5", total:"47.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"Chicago's 59-point opener may be inflating the price. Minnesota looked strong enough that +5.5 deserves a serious overreaction check.",
+      market:"CHI -5.5", total:"47.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      quick:"Minnesota +5.5 still looks like a possible Week 1 overreaction spot, but QB Kyler Murray is in concussion protocol and RB Jordan Mason went to IR. Chicago also has major trench questions, including Darnell Wright and two DTs DNP.",
       why:["Chicago's Week 1 explosion creates exactly the kind of recency bias we want to test rather than chase.","Minnesota's win over Green Bay included competent offense and solid defensive play, not merely turnover luck.","A divisional favorite laying 5.5 after one game is a meaningful number; we need to decide whether the true gap is closer to a field goal.","Injuries along either offensive line or in Minnesota's secondary could swing the evaluation materially."],
       watch:["MIN offensive-line health","CHI skill-position health","Whether market reaches +6","Explosive-play sustainability"],
       matchup:["MIN offense vs CHI defense","CHI explosive offense vs MIN secondary","OL vs pass rush","Divisional familiarity"],
@@ -52,8 +52,8 @@ window.dashboardData = {
     },
     {
       id:"car-atl", day:"Sun", time:"12:00 PM CT", away:"CAR", awayName:"Carolina Panthers", home:"ATL", homeName:"Atlanta Falcons",
-      market:"CAR -2.5", total:"44.5", status:"PASS", confidence:"Low", audit:"Preliminary",
-      quick:"The market has flipped direction. Until we understand why, this is information-rich but bet-poor.",
+      market:"CAR -2.5", total:"43.5", status:"PASS", confidence:"Low", audit:"Wednesday injury report reviewed",
+      quick:"The market flip now makes more sense: Tua Tagovailoa remained DNP while Michael Penix Jr. practiced fully. Atlanta also had G Chris Lindstrom and CB A.J. Terrell DNP. Too many moving parts; no bet.",
       why:["A market flip is itself a signal that new information or major repricing may be occurring.","Atlanta's quarterback situation makes personnel confirmation essential.","Carolina's Week 1 result was noisy enough that we do not want to extrapolate without efficiency context.","This is exactly the kind of game where forcing an opinion creates bad bets."],
       watch:["ATL QB status","Reason for market flip","CAR defensive injuries","Any move through -3"],
       matchup:["Quarterback stability","ATL protection","CAR pace","Short-field/turnover volatility"],
@@ -92,8 +92,8 @@ window.dashboardData = {
     },
     {
       id:"cle-tb", day:"Sun", time:"12:00 PM CT", away:"CLE", awayName:"Cleveland Browns", home:"TB", homeName:"Tampa Bay Buccaneers",
-      market:"TB -8.5", total:"42.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"Cleveland's offense and OL were poor enough in Week 1 to keep Tampa on the radar, but -8.5 is expensive.",
+      market:"TB -8.5", total:"41.5", status:"WATCH", confidence:"Medium-High", audit:"Wednesday injury report reviewed",
+      quick:"Cleveland's OL cluster remains a major concern: Teven Jenkins DNP, with Parker Brailsford, Elgton Jenkins and Dawand Jones limited. Tampa -8.5 is one of the stronger Sunday watches, but the number is already expensive.",
       why:["Cleveland's protection problems are exactly the kind of persistent weakness our injury model should capture.","Tampa can create a game script where Cleveland must throw into pressure.","The spread is already large, so we need confirmation that the Browns remain materially compromised.","The total may become more interesting than the side if Cleveland's offensive ceiling is suppressed."],
       watch:["CLE OL report","QB efficiency","TB defensive front health","Team-total market"],
       matchup:["TB pressure vs CLE OL","CLE early-down offense","TB red-zone offense","Cleveland team total"],
@@ -102,8 +102,8 @@ window.dashboardData = {
     },
     {
       id:"jax-den", day:"Sun", time:"3:05 PM CT", away:"JAX", awayName:"Jacksonville Jaguars", home:"DEN", homeName:"Denver Broncos",
-      market:"DEN -2.5", total:"42.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"Jacksonville was one of our strongest Week 1 process fits and is now getting points against a Denver team that scored 10 at Kansas City.",
+      market:"DEN -2.5", total:"45.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      quick:"Jacksonville +2.5 remains interesting, but WRs Brian Thomas Jr. and Jakobi Meyers were limited Wednesday. Denver had Marvin Mims Jr. and RJ Harvey DNP. This stays on the shortlist pending Thursday participation trends.",
       why:["Jacksonville's Week 1 result aligned with our pregame injury and trench thesis, which makes its underlying rating worth revisiting upward.","Denver's offense did not show enough in Week 1 to justify automatic home-favorite status.","Getting +2.5 leaves us just short of the key +3, so price shopping matters.","Altitude and Denver's defense are real counterweights; this is not a blind Jaguars play."],
       watch:["Can we find JAX +3?","JAX OL injuries","DEN QB/OL report","Altitude/rest factors"],
       matchup:["JAX offense vs DEN defense","DEN offense vs JAX front","Explosive-play differential","Red-zone efficiency"],
@@ -142,8 +142,8 @@ window.dashboardData = {
     },
     {
       id:"was-dal", day:"Sun", time:"3:25 PM CT", away:"WAS", awayName:"Washington Commanders", home:"DAL", homeName:"Dallas Cowboys",
-      market:"DAL -4.5", total:"48.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"Dallas lost outright to New York while Washington played Philadelphia tightly. +4.5 may be generous to Washington.",
+      market:"DAL -4.5", total:"50.5", status:"PASS", confidence:"Low-Medium", audit:"Wednesday injury report reviewed",
+      quick:"Washington +4.5 lost appeal after Wednesday: Frankie Luvu and Chig Okonkwo DNP, with multiple front-seven defenders limited. Dallas reported clean. Downgraded from WATCH to PASS for now.",
       why:["Washington's Week 1 performance was competitive against a strong opponent.","Dallas' loss does not automatically make the Cowboys bad, but it weakens the case for laying more than a field goal.","Division familiarity raises the value of points with an underdog if the teams grade closer than the market suggests.","OL and secondary injuries will matter heavily because both teams can create explosive passing plays."],
       watch:["WAS OL","DAL secondary","Line staying above +4","Turnover variance"],
       matchup:["Washington pass protection","Dallas explosive passing","Division familiarity","Fourth-down aggressiveness"],
@@ -152,8 +152,8 @@ window.dashboardData = {
     },
     {
       id:"ind-kc", day:"Sun", time:"7:20 PM CT", away:"IND", awayName:"Indianapolis Colts", home:"KC", homeName:"Kansas City Chiefs",
-      market:"KC -6.5", total:"48.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
-      quick:"Kansas City looked strong Monday, but the market reliably charges a Chiefs premium. We need to decide whether Indianapolis is bad enough to justify almost a touchdown.",
+      market:"KC -6.5", total:"46.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      quick:"Kansas City remains the stronger side, but LT Josh Simmons DNP and Chris Jones was limited Wednesday. Indianapolis has its own issues. At -6.5, we still prefer waiting rather than paying the Chiefs premium.",
       why:["Kansas City handled Denver convincingly and deserves a strong baseline rating.","Indianapolis was beaten badly by Baltimore, but one game against an elite opponent can distort perception.","At -6.5 the question is not who is better; it is whether the true gap exceeds a touchdown.","Kansas City's offensive-line and defensive injuries remain important because they can change both spread and total projections."],
       watch:["KC OL","IND QB/OL","Spread crossing -7","Rest after Monday night"],
       matchup:["KC pressure packages","IND protection","Mahomes third-down efficiency","Short-week rest differential"],
@@ -172,41 +172,51 @@ window.dashboardData = {
     }
   ],
   injuries:[
-    {team:"Detroit", player:"Christian Mahogany", status:"DNP watch", severity:"high", note:"Starting LG; possible protection downgrade if unavailable."},
-    {team:"Detroit", player:"Blake Miller", status:"DNP watch", severity:"high", note:"RT concern; part of a possible OL cluster."},
-    {team:"Detroit", player:"Juice Scruggs", status:"Limited watch", severity:"medium", note:"OL depth/cluster impact matters if paired with other absences."},
-    {team:"League-wide", player:"Sunday slate", status:"Preliminary", severity:"low", note:"Full Wednesday injury audit will populate this panel with verified starters, replacements, and clusters."}
+    {team:"Detroit", player:"Christian Mahogany", status:"OUT", severity:"high", note:"Starting guard out; significant in a short-week OL cluster."},
+    {team:"Detroit", player:"Blake Miller", status:"OUT", severity:"high", note:"Starting tackle out; Detroit is also without top C Cade Mays on IR."},
+    {team:"Detroit", player:"D.J. Reed", status:"Questionable", severity:"medium", note:"Starting CB foot injury; secondary status matters against Josh Allen."},
+    {team:"Buffalo", player:"Cole Bishop", status:"Questionable", severity:"medium", note:"Safety; knee/groin. One of three Bills listed questionable."},
+    {team:"Pittsburgh", player:"Troy Fautanu", status:"DNP", severity:"high", note:"Starting tackle; key Thursday trend for PIT +5.5 thesis."},
+    {team:"New England", player:"Carlton Davis III", status:"DNP", severity:"medium", note:"Starting CB; Patriots also have OL injuries to monitor."},
+    {team:"Minnesota", player:"Kyler Murray", status:"Concussion protocol", severity:"high", note:"Quarterback status is the biggest variable in MIN-CHI."},
+    {team:"Minnesota", player:"Jordan Mason", status:"IR", severity:"medium", note:"Backfield role changes must be incorporated into props and game script."},
+    {team:"Chicago", player:"Darnell Wright", status:"DNP", severity:"high", note:"Starting tackle; Bears also had Grady Jarrett and Neville Gallimore DNP."},
+    {team:"Cleveland", player:"OL cluster", status:"1 DNP / 3 limited", severity:"high", note:"Teven Jenkins DNP; Parker Brailsford, Elgton Jenkins and Dawand Jones limited."},
+    {team:"Atlanta", player:"Tua Tagovailoa", status:"DNP", severity:"high", note:"Michael Penix Jr. practiced fully; QB hierarchy remains market-moving."},
+    {team:"Jacksonville", player:"Brian Thomas Jr. / Jakobi Meyers", status:"Limited", severity:"medium", note:"Both starting WRs limited; monitor Thursday direction."},
+    {team:"Washington", player:"Frankie Luvu", status:"DNP", severity:"high", note:"Part of a broader Commanders front-seven injury cluster."},
+    {team:"Kansas City", player:"Josh Simmons", status:"DNP", severity:"high", note:"Starting tackle; important against Indianapolis pass rush."}
   ],
   props:[
     {
-      id:"allen-pass-yds", rank:1, player:"Josh Allen", pos:"QB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
-      market:"Passing Yards", side:"OVER", line:"248.5", price:"TBD", projection:"251.5", edge:"+3.0 yds", confidence:"Medium", status:"WATCH", audit:"Role/context audit active",
-      quick:"OVER 248.5 passing yards. High-total environment and stable full-game role create interest, but Detroit secondary availability, Buffalo OL health and the exact price still need the final audit.",
+      id:"kincaid-rec-yds", rank:1, player:"Dalton Kincaid", pos:"TE", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Receiving Yards", side:"OVER", line:"49.5", price:"-120", projection:"56-61", edge:"~+7 to +12 yds", confidence:"High", status:"BET", audit:"Role/context audit complete",
+      quick:"OVER 49.5 receiving yards. Detroit allowed heavy TE usage in Week 1, Kincaid commanded five catches for 130 yards against Houston, and Buffalo's passing environment is strong.",
       why:[
-        "Allen's quarterback role is structurally stable, so his historical passing baseline remains more relevant than it would for a player whose workload has materially changed.",
-        "The projected game environment supports passing volume if Detroit can keep pace and prevent Buffalo from becoming overly run-heavy in the second half.",
-        "We must verify Detroit's current secondary availability and coverage personnel before treating historical pass-defense numbers as predictive.",
-        "The exact number matters: a modest edge at 248.5 can disappear quickly if the market moves into the upper 250s."
+        "Kincaid caught 5 passes for 130 yards in Week 1, and no other Bills tight end saw more than one target, supporting a concentrated receiving role.",
+        "Detroit allowed 87 receiving yards and two touchdowns to Saints tight ends in Week 1, continuing a weakness that was present last season.",
+        "Buffalo's team environment projects for sustained offense, while Detroit's questionable secondary depth can keep Allen attacking through the air.",
+        "The line is still below 50 yards. This recommendation weakens materially if it moves into the upper 50s or the juice becomes excessive."
       ],
-      role:["Starting QB with stable full-game role","No workload competition issue at quarterback","Receiver/OL health still must be audited","Historical baseline remains relevant because role is structurally stable"],
-      matchup:["DET secondary availability","BUF pass protection","Expected neutral pass rate","Game total and score distribution"],
-      risks:["Buffalo builds a large lead and becomes run-heavier","Allen generates offense with his legs rather than passing volume","Market moves several yards before bet time","Unexpected weather or offensive-line downgrade"],
-      bottom:"Current side: OVER 248.5 passing yards. Interesting at this threshold, but not a locked bet until the complete Wednesday/Thursday audit is finished."
+      role:["Primary receiving TE in Week 1","Five catches / 130 yards on concentrated TE usage","No current role-reduction signal identified","Current role weighted more heavily than career average"],
+      matchup:["Detroit TE coverage","Single-high tendencies","Allen efficiency","Competitive/high-total game environment"],
+      risks:["Week 1 yardage was boosted by explosive plays","Buffalo spreads targets across WRs","Detroit changes coverage structure","Line moves materially before kickoff"],
+      bottom:"BET: Dalton Kincaid OVER 49.5 receiving yards at roughly -120 or better. Recheck Thursday inactive news before lock."
     },
     {
-      id:"stbrown-receptions", rank:2, player:"Amon-Ra St. Brown", pos:"WR", team:"DET", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
-      market:"Receptions", side:"OVER", line:"7.5", price:"TBD", projection:"Preliminary", edge:"Pending", confidence:"Medium", status:"WATCH", audit:"Role/context audit active",
-      quick:"OVER 7.5 receptions. His high-volume role makes catches more appealing than pure yardage, but 7.5 is a demanding threshold and Detroit's OL health could alter route timing and target depth.",
+      id:"allen-rush-att", rank:2, player:"Josh Allen", pos:"QB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Rushing Attempts", side:"OVER", line:"6.5", price:"-125", projection:"7.5-8.0", edge:"~+1 attempt", confidence:"Medium-High", status:"BET", audit:"Role/context audit complete",
+      quick:"OVER 6.5 rushing attempts. Allen has a stable designed-run/scramble role, and mobile quarterbacks have generated meaningful rushing volume against Detroit.",
       why:[
-        "Reception props are driven heavily by route participation and target share, and St. Brown's role is normally among Detroit's most stable.",
-        "A potentially competitive or trailing game script can support pass volume.",
-        "Detroit's offensive-line condition matters because pressure can either create short-area targets or disrupt the offense entirely.",
-        "At 7.5, we need evidence that his current role supports eight-plus catches rather than simply relying on reputation or one week's target total."
+        "Allen averaged 8.2 carries over his final 10 games last season and cleared 6.5 in seven of those 10.",
+        "The thesis does not depend on Buffalo trailing; Allen has cleared this level in both wins and losses because scrambles and designed runs are structural parts of the offense.",
+        "Detroit allowed notable rushing-attempt volume to mobile quarterbacks last season, and Allen himself had 11 carries against Detroit in the 2024 meeting.",
+        "This is a role-based prop, so it is less sensitive than passing yards to a few explosive completions or drops."
       ],
-      role:["Primary high-volume receiver","Route participation expected to remain elite","Teammate availability can redistribute targets","Current-season target share weighted more heavily than career catch average"],
-      matchup:["BUF slot/zone coverage","DET pass rate if trailing","Pressure-driven target depth","Red-zone target competition"],
-      risks:["Target distribution broadens","Detroit controls game on ground","Buffalo brackets underneath routes","Price rises to 8.5 or juice becomes excessive"],
-      bottom:"Current side: OVER 7.5 receptions. Attractive role, but the threshold is high enough that matchup and target concentration must be confirmed."
+      role:["Stable dual-threat QB role","Designed runs plus scrambles","No workload competition issue","Recent usage weighted more heavily than full-career mean"],
+      matchup:["Detroit contain discipline","Man/single-high scramble lanes","Expected competitive game","Red-zone QB run equity"],
+      risks:["Buffalo wins comfortably without Allen needing to run","Kneel-down stat treatment varies by book","Detroit uses more zone and keeps eyes on QB","Juice rises beyond acceptable range"],
+      bottom:"BET: Josh Allen OVER 6.5 rushing attempts around -125 or better. Avoid chasing if the line moves to 7.5."
     }
   ],
   recommendationLog:[
