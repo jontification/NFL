@@ -22,3 +22,7 @@ Statuses:
 - Red = PASS
 
 Early reads are not official bets until the full audit is complete.
+
+
+## Player Props
+The dashboard now includes `props.html` and `prop.html`, with data-driven prop deep dives and a mandatory Role & Context Audit.

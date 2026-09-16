@@ -177,6 +177,83 @@ window.dashboardData = {
     {team:"Detroit", player:"Juice Scruggs", status:"Limited watch", severity:"medium", note:"OL depth/cluster impact matters if paired with other absences."},
     {team:"League-wide", player:"Sunday slate", status:"Preliminary", severity:"low", note:"Full Wednesday injury audit will populate this panel with verified starters, replacements, and clusters."}
   ],
+  props:[
+    {
+      id:"allen-pass-yds", rank:1, player:"Josh Allen", pos:"QB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Passing Yards", line:"248.5", price:"-110", projection:"Preliminary", edge:"Pending", confidence:"Medium", status:"WATCH", audit:"Role/context audit active",
+      quick:"High-total environment and elite QB profile are interesting, but this stays WATCH until the final Detroit secondary, Buffalo OL/receiver, and market-price audits are complete.",
+      why:[
+        "The game environment projects to create enough offensive volume for a passing-yards over to deserve attention.",
+        "Allen's rushing ability can sometimes reduce passing-volume requirements near the goal line, so raw offensive strength is not automatically an over signal.",
+        "We must verify Detroit's current secondary availability and coverage personnel before treating historical pass-defense numbers as predictive.",
+        "The exact number matters: a modest edge at 248.5 can disappear quickly if the market moves into the upper 250s."
+      ],
+      role:["Starting QB with stable full-game role","No workload competition issue at quarterback","Receiver/OL health still must be audited","Historical baseline remains relevant because role is structurally stable"],
+      matchup:["DET secondary availability","BUF pass protection","Expected neutral pass rate","Game total and score distribution"],
+      risks:["Buffalo builds a large lead and becomes run-heavier","Allen generates offense with his legs rather than passing volume","Market moves several yards before bet time","Unexpected weather or offensive-line downgrade"],
+      bottom:"Interesting at the current threshold, but not a locked bet until the complete Wednesday/Thursday audit is finished."
+    },
+    {
+      id:"stbrown-receptions", rank:2, player:"Amon-Ra St. Brown", pos:"WR", team:"DET", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Receptions", line:"7.5", price:"TBD", projection:"Preliminary", edge:"Pending", confidence:"Medium", status:"WATCH", audit:"Role/context audit active",
+      quick:"High-volume role makes receptions more appealing than pure yardage, but 7.5 is a demanding threshold and Detroit's OL health could alter route timing and target depth.",
+      why:[
+        "Reception props are driven heavily by route participation and target share, and St. Brown's role is normally among Detroit's most stable.",
+        "A potentially competitive or trailing game script can support pass volume.",
+        "Detroit's offensive-line condition matters because pressure can either create short-area targets or disrupt the offense entirely.",
+        "At 7.5, we need evidence that his current role supports eight-plus catches rather than simply relying on reputation or one week's target total."
+      ],
+      role:["Primary high-volume receiver","Route participation expected to remain elite","Teammate availability can redistribute targets","Current-season target share weighted more heavily than career catch average"],
+      matchup:["BUF slot/zone coverage","DET pass rate if trailing","Pressure-driven target depth","Red-zone target competition"],
+      risks:["Target distribution broadens","Detroit controls game on ground","Buffalo brackets underneath routes","Price rises to 8.5 or juice becomes excessive"],
+      bottom:"WATCH. Attractive role, but the threshold is high enough that matchup and target concentration must be confirmed."
+    },
+    {
+      id:"gibbs-rush-att", rank:3, player:"Jahmyr Gibbs", pos:"RB", team:"DET", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Rushing Attempts", line:"19.5", price:"TBD", projection:"Role-adjusted", edge:"No under edge assumed", confidence:"Medium", status:"PASS", audit:"Role context corrected",
+      quick:"Career carry averages are misleading in 2026 because David Montgomery is gone and Isaiah Pacheco is injured. We will not fade Gibbs based on old committee usage.",
+      why:[
+        "Gibbs' earlier-career workload was shaped by a materially different backfield structure.",
+        "David Montgomery's departure removes a major historical source of carry competition.",
+        "Isaiah Pacheco's injury further concentrates viable backfield work, so current role must dominate the projection.",
+        "Because the old historical baseline is structurally stale, 19.5 cannot be called inflated without a current-role projection."
+      ],
+      role:["Expanded 2026 lead-back role","Montgomery no longer on roster","Pacheco unavailable","Backup carry competition currently limited; historical committee averages heavily discounted"],
+      matchup:["DET OL availability","BUF run-front efficiency","Expected score state","Goal-line and clock-killing role"],
+      risks:["Detroit falls behind and shifts to pass-heavy offense","OL injuries reduce rushing efficiency","Unexpected backup usage emerges","Line/juice changes materially"],
+      bottom:"PASS on the under for now. This is the dashboard example of why the Role & Context Audit is mandatory."
+    },
+    {
+      id:"cook-rush-att", rank:4, player:"James Cook", pos:"RB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
+      market:"Rushing Attempts", line:"17.5", price:"TBD", projection:"Preliminary", edge:"Pending", confidence:"Low", status:"WATCH", audit:"Role/context audit pending final",
+      quick:"Potential under angle exists only if Allen's rushing share, backfield rotation, and expected pass rate keep Cook below a true 18-carry median.",
+      why:[
+        "Carry props require a current opportunity projection, not career averages alone.",
+        "Josh Allen's rushing involvement can siphon designed and scramble attempts from running-back volume.",
+        "Buffalo's likely game script could increase second-half carries if favored, which works against the under.",
+        "We need current backfield snap and carry shares before deciding whether 17.5 is actually high."
+      ],
+      role:["Lead running back role appears stable","QB rushing share remains a structural factor","Backup rotation must be verified","Current snap/carry share takes precedence over career average"],
+      matchup:["DET run defense","BUF expected lead probability","Red-zone role","Pace and drive volume"],
+      risks:["Buffalo plays from ahead","Cook dominates early-down work","Detroit invites run through light boxes","Market offers favorable over price instead"],
+      bottom:"WATCH only. Do not bet the under until current workload data confirms a real volume discrepancy."
+    },
+    {
+      id:"taylor-rush-yds", rank:5, player:"Jonathan Taylor", pos:"RB", team:"IND", game:"IND @ KC", day:"Sun", time:"7:20 PM CT",
+      market:"Rushing Yards", line:"Threshold watch", price:"TBD", projection:"Pending", edge:"Pending", confidence:"Low", status:"WATCH", audit:"Sunday reports pending",
+      quick:"Potential under only if the market hangs a materially high number. Kansas City's front, game script, and Indianapolis OL health all need verification.",
+      why:[
+        "A rushing-yard under can be cleaner than attempts if the matchup projects poor efficiency.",
+        "Kansas City's defensive front and likely score state may pressure Indianapolis away from a run-heavy plan.",
+        "Taylor's actual current workload and Colts offensive-line health remain essential inputs.",
+        "There is no bet without a real sportsbook number; this is a threshold watch, not a recommendation."
+      ],
+      role:["Primary back role must be confirmed through current snap/carry share","Backup competition and receiving usage checked during role audit","OL health materially affects efficiency projection","Historical yardage distributions adjusted for current scheme"],
+      matchup:["IND OL vs KC front","Projected score state","KC box counts","Taylor yards after contact"],
+      risks:["Colts remain competitive and feed Taylor","KC defensive injuries soften matchup","Market line opens lower than expected","Taylor receives unusually heavy volume"],
+      bottom:"WATCH for price. This becomes actionable only after the Sunday market and injury context are mature."
+    }
+  ],
   recommendationLog:[
     {week:1, game:"ATL @ PIT", selection:"PIT -5.5", decision:"BET", result:"Win", clv:"+1.0", units:"+0.91", note:"QB/injury-driven thesis."},
     {week:1, game:"ATL @ PIT", selection:"UNDER 40.5", decision:"BET", result:"Win", clv:"+0.5", units:"+0.91", note:"Offensive suppression thesis."},
