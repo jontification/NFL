@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jon NFL Betting Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">2026 NFL Betting Lab</p>
+      <h1>Jon NFL Betting Dashboard</h1>
+      <p class="subhead">A public accountability board for model-vs-market betting recommendations, injury audits, CLV, and postgame truth serum.</p>
+    </div>
+    <div class="status-card">
+      <span>Current Week</span>
+      <strong id="currentWeek">2</strong>
+      <em id="lastUpdated">Updated manually</em>
+    </div>
+  </header>
+
+  <main>
+    <section class="kpis" id="kpis"></section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">This week</p>
+          <h2>Betting Card</h2>
+        </div>
+        <p class="note">BET requires complete injury, line, weather, matchup, and price audit.</p>
+      </div>
+      <div class="table-wrap">
+        <table id="cardTable"></table>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <article class="panel">
+        <p class="eyebrow">Process</p>
+        <h2>Recommendation Rules</h2>
+        <ul class="rules">
+          <li><strong>Pass is the default.</strong> No forced action.</li>
+          <li><strong>Side threshold:</strong> 1.5+ points, or 1.0+ with confirmed injury mispricing.</li>
+          <li><strong>Total threshold:</strong> 2.0+ points, or 1.5+ with strong weather/injury confirmation.</li>
+          <li><strong>Incomplete audit:</strong> WATCH or ANALYSIS INCOMPLETE, never BET.</li>
+          <li><strong>Primary process metric:</strong> closing-line value, not just win/loss.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Audit</p>
+        <h2>Recent Injuries / Watch Items</h2>
+        <div id="injuryList" class="injuries"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Season-to-date</p>
+          <h2>Recommendation Log</h2>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="logTable"></table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built for transparent process tracking. Edit <code>data.js</code> each week, then upload to GitHub Pages.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
