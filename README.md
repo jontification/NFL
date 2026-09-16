@@ -1,12 +1,24 @@
-# Jon NFL Betting Dashboard
+# Jon's NFL Betting Dashboard
 
-Static GitHub Pages dashboard.
+Static GitHub Pages dashboard for the 2026 NFL betting experiment.
 
-## How to publish
-1. Create a GitHub repo.
-2. Upload `index.html`, `styles.css`, `app.js`, and `data.js` to the repo root.
-3. In GitHub: Settings → Pages → Deploy from branch → main / root.
-4. Each week, update `data.js` with the new betting card, injuries, and results.
+## Upload to GitHub root
+Upload these files to the repository root:
+- `index.html`
+- `game.html`
+- `styles.css`
+- `data.js`
+- `app.js`
+- `game.js`
 
-## Process rule
-No recommendation should be marked `BET` unless the injury, line, weather, matchup, and price audit is complete or explicitly marked unavailable.
+GitHub Pages should be set to **main / (root)**.
+
+## Updating each week
+The site is data-driven. Most weekly content lives in `data.js`. The main card automatically lists every game, and each **View** link opens a detailed game page driven by the same data.
+
+Statuses:
+- Green = BET
+- Gray = WATCH
+- Red = PASS
+
+Early reads are not official bets until the full audit is complete.
