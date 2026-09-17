@@ -191,12 +191,13 @@ window.dashboardData = {
     {
       id:"kincaid-rec-yds", rank:1, player:"Dalton Kincaid", pos:"TE", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
       market:"Receiving Yards", side:"OVER", line:"49.5", price:"-120", projection:"56-61", edge:"~+7 to +12 yds", confidence:"High", status:"BET", audit:"Role/context audit complete",
-      quick:"OVER 49.5 receiving yards. Detroit allowed heavy TE usage in Week 1, Kincaid commanded five catches for 130 yards against Houston, and Buffalo's passing environment is strong.",
+      quick:"OVER 49.5 receiving yards. Kincaid had 5 catches for 130 yards in Week 1, Detroit allowed 87 yards and 2 TDs to Saints tight ends, and Buffalo offers a strong passing environment. We like the threshold while it remains below the upper 50s.",
       why:[
-        "Kincaid caught 5 passes for 130 yards in Week 1, and no other Bills tight end saw more than one target, supporting a concentrated receiving role.",
-        "Detroit allowed 87 receiving yards and two touchdowns to Saints tight ends in Week 1, continuing a weakness that was present last season.",
-        "Buffalo's team environment projects for sustained offense, while Detroit's questionable secondary depth can keep Allen attacking through the air.",
-        "The line is still below 50 yards. This recommendation weakens materially if it moves into the upper 50s or the juice becomes excessive."
+        "Kincaid caught 5 passes for 130 yards in Week 1, and no other Bills tight end saw more than one target. That supports a concentrated receiving role rather than treating the 130 yards as a random box-score spike.",
+        "Detroit allowed 87 receiving yards and two touchdowns to Saints tight ends in Week 1, which gives us a specific positional matchup reason to expect Buffalo to involve Kincaid.",
+        "Buffalo's overall passing environment is favorable, and Detroit's secondary questions create additional reasons for Josh Allen to keep attacking through the air rather than needing a run-heavy script.",
+        "The attractive part of the market is the threshold: 49.5 keeps the requirement below 50 yards. Our current rough projection range is 56-61 yards.",
+        "Price discipline matters. We would not chase this prop if the yardage line moves into the upper 50s or the juice becomes materially more expensive."
       ],
       role:["Primary receiving TE in Week 1","Five catches / 130 yards on concentrated TE usage","No current role-reduction signal identified","Current role weighted more heavily than career average"],
       matchup:["Detroit TE coverage","Single-high tendencies","Allen efficiency","Competitive/high-total game environment"],
@@ -206,12 +207,13 @@ window.dashboardData = {
     {
       id:"allen-rush-att", rank:2, player:"Josh Allen", pos:"QB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
       market:"Rushing Attempts", side:"OVER", line:"6.5", price:"-125", projection:"7.5-8.0", edge:"~+1 attempt", confidence:"Medium-High", status:"BET", audit:"Role/context audit complete",
-      quick:"OVER 6.5 rushing attempts. Allen has a stable designed-run/scramble role, and mobile quarterbacks have generated meaningful rushing volume against Detroit.",
+      quick:"OVER 6.5 rushing attempts. Allen averaged 8.2 carries over his final 10 games last season, cleared this number in 7 of 10, and had 11 carries vs Detroit in their 2024 meeting. This is a usage-based bet on his designed runs + scrambles.",
       why:[
-        "Allen averaged 8.2 carries over his final 10 games last season and cleared 6.5 in seven of those 10.",
-        "The thesis does not depend on Buffalo trailing; Allen has cleared this level in both wins and losses because scrambles and designed runs are structural parts of the offense.",
-        "Detroit allowed notable rushing-attempt volume to mobile quarterbacks last season, and Allen himself had 11 carries against Detroit in the 2024 meeting.",
-        "This is a role-based prop, so it is less sensitive than passing yards to a few explosive completions or drops."
+        "Recent usage is the core of the thesis: Allen averaged 8.2 rushing attempts over his final 10 games last season and cleared 6.5 attempts in seven of those 10.",
+        "This is not a bet that requires Buffalo to trail. Designed quarterback runs and scrambles are structural parts of Buffalo's offense, so Allen can reach the number in multiple game scripts.",
+        "Detroit has allowed meaningful rushing-attempt volume to mobile quarterbacks, and Allen himself logged 11 carries when Buffalo faced Detroit in 2024.",
+        "We prefer attempts to rushing yards because this is fundamentally a usage bet. A short scramble counts the same toward the wager as a long designed run, making the thesis less dependent on rushing efficiency.",
+        "Price discipline matters: 6.5 is the attractive threshold. If the market moves this to 7.5, the edge becomes much thinner and we would likely PASS rather than chase."
       ],
       role:["Stable dual-threat QB role","Designed runs plus scrambles","No workload competition issue","Recent usage weighted more heavily than full-career mean"],
       matchup:["Detroit contain discipline","Man/single-high scramble lanes","Expected competitive game","Red-zone QB run equity"],
