@@ -1,7 +1,8 @@
 window.dashboardData = {
   currentWeek: 2,
   season: 2026,
-  lastUpdated: "Thursday, Sep 17, 2026 · 4:12 PM CT Update",
+  lastUpdated: "Thursday, Sep 17, 2026 · Full Market Refresh",
+  marketSource: "FanDuel reference lines; cross-checked against Action Network multi-book screen",
   seasonRecord: { wins: 3, losses: 0, pushes: 0, units: 2.7, avgClv: 1.4, roi: 27 },
   games: [
     {
@@ -22,7 +23,7 @@ window.dashboardData = {
     },
     {
       id:"phi-ten", day:"Sun", time:"12:00 PM CT", away:"PHI", awayName:"Philadelphia Eagles", home:"TEN", homeName:"Tennessee Titans",
-      market:"PHI -7", total:"45.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"PHI -7", total:"39.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"Philadelphia has the cleaner baseline; Tennessee remains suspect offensively. Need our fair line comfortably past 8 before laying a touchdown.",
       why:["Philadelphia enters with the stronger roster baseline on both lines of scrimmage.","Tennessee's offense is the key question; we need to know whether Week 1 inefficiency was structural or opponent-driven.","Seven is a major NFL spread threshold, so a small model edge is not enough.","If Philadelphia's injury report is clean and Tennessee has OL or skill-position losses, this can move up the board."],
       watch:["TEN offensive-line health","PHI trench injuries","Whether line crosses -7","Red-zone efficiency regression"],
@@ -32,7 +33,7 @@ window.dashboardData = {
     },
     {
       id:"pit-ne", day:"Sun", time:"12:00 PM CT", away:"PIT", awayName:"Pittsburgh Steelers", home:"NE", homeName:"New England Patriots",
-      market:"NE -5.5", total:"41.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      market:"NE -4.5", total:"41.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
       quick:"The market has moved to Pittsburgh +5.5, which improves the price, but LT Troy Fautanu DNP Wednesday. New England also has OL/secondary issues, so this remains a live underdog watch rather than a bet.",
       why:["The spread asks New England to win by more than a field goal despite limited evidence of a large team-quality gap.","Pittsburgh's defense can create short fields and suppress explosive plays, which increases underdog value.","Week 1 can move perception too quickly; we want to separate sustainable offense from one-game outcomes.","Pittsburgh becomes more attractive if its offensive line and quarterback protection check out."],
       watch:["PIT OL availability","NE offensive injuries","Market move toward +5 or +4","Pressure-rate matchup"],
@@ -42,7 +43,7 @@ window.dashboardData = {
     },
     {
       id:"min-chi", day:"Sun", time:"12:00 PM CT", away:"MIN", awayName:"Minnesota Vikings", home:"CHI", homeName:"Chicago Bears",
-      market:"CHI -5.5", total:"47.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
+      market:"CHI -4.5", total:"47.5", status:"WATCH", confidence:"Medium", audit:"Wednesday injury report reviewed",
       quick:"Minnesota +5.5 still looks like a possible Week 1 overreaction spot, but QB Kyler Murray is in concussion protocol and RB Jordan Mason went to IR. Chicago also has major trench questions, including Darnell Wright and two DTs DNP.",
       why:["Chicago's Week 1 explosion creates exactly the kind of recency bias we want to test rather than chase.","Minnesota's win over Green Bay included competent offense and solid defensive play, not merely turnover luck.","A divisional favorite laying 5.5 after one game is a meaningful number; we need to decide whether the true gap is closer to a field goal.","Injuries along either offensive line or in Minnesota's secondary could swing the evaluation materially."],
       watch:["MIN offensive-line health","CHI skill-position health","Whether market reaches +6","Explosive-play sustainability"],
@@ -62,7 +63,7 @@ window.dashboardData = {
     },
     {
       id:"gb-nyj", day:"Sun", time:"12:00 PM CT", away:"GB", awayName:"Green Bay Packers", home:"NYJ", homeName:"New York Jets",
-      market:"GB -4.5", total:"43.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"GB -3.5", total:"44.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"Green Bay is still laying a meaningful road number after a poor opener. New York's outright Week 1 win makes the home dog worth testing.",
       why:["Green Bay's Week 1 loss exposed questions on both sides of the ball that may not be fully resolved by one week of adjustment.","The Jets won outright and may be better than preseason pricing suggested.","Home +4.5 is a useful cushion if our power ratings see these teams closer together.","We need to know whether Green Bay's Week 1 result was matchup-specific or indicative of a broader issue."],
       watch:["GB OL/DL health","Jets quarterback efficiency","Market move toward +5","Turnover luck"],
@@ -72,7 +73,7 @@ window.dashboardData = {
     },
     {
       id:"no-bal", day:"Sun", time:"12:00 PM CT", away:"NO", awayName:"New Orleans Saints", home:"BAL", homeName:"Baltimore Ravens",
-      market:"BAL -8.5", total:"44.5", status:"PASS", confidence:"Low", audit:"Preliminary",
+      market:"BAL -8.5", total:"46.5", status:"PASS", confidence:"Low", audit:"Preliminary",
       quick:"Baltimore is clearly stronger, but -8.5 already charges a premium. We need a major edge to lay it.",
       why:["Baltimore's Week 1 performance supports a strong rating, but the market knows that too.","New Orleans was competitive enough in Week 1 to make a large spread less automatic than it looks.","Big favorites require strong evidence because a good team can win comfortably without covering.","Unless injuries create additional separation, the current price does not offer enough value."],
       watch:["BAL injuries","NO QB/OL health","Any drop toward -7","Total movement"],
@@ -82,7 +83,7 @@ window.dashboardData = {
     },
     {
       id:"cin-hou", day:"Sun", time:"12:00 PM CT", away:"CIN", awayName:"Cincinnati Bengals", home:"HOU", homeName:"Houston Texans",
-      market:"HOU -3", total:"46.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"HOU -2.5", total:"45.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"A full field goal with Cincinnati is interesting. Houston competed with Buffalo, but the market may be giving too much home-field credit.",
       why:["Cincinnati won Week 1 and may still be priced below its offensive ceiling.","Houston was competitive against Buffalo, so this is not a simple fade; the number is the attraction.","Getting a full +3 matters materially in close-game distributions.","The key will be protection, pressure, and whether either secondary enters compromised."],
       watch:["CIN OL","HOU secondary","Price holding +3","Pass-rush mismatch"],
@@ -112,7 +113,7 @@ window.dashboardData = {
     },
     {
       id:"lv-lac", day:"Sun", time:"3:05 PM CT", away:"LV", awayName:"Las Vegas Raiders", home:"LAC", homeName:"Los Angeles Chargers",
-      market:"LAC -7", total:"45.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"LAC -6.5", total:"43.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"Las Vegas looked better than expected while the Chargers lost outright. Seven points creates a natural divisional-dog investigation.",
       why:["The Raiders' Week 1 performance may warrant a small upgrade from preseason expectations.","The Chargers' upset loss does not mean they are bad, but it does make a full touchdown worth testing.","Divisional familiarity can reduce matchup variance and make big spreads harder to justify.","We need injury clarity at receiver, offensive line, and in the Chargers' front before leaning harder."],
       watch:["LV skill-position health","LAC OL","Spread through +7","Explosive-play regression"],
@@ -122,7 +123,7 @@ window.dashboardData = {
     },
     {
       id:"sea-ari", day:"Sun", time:"3:25 PM CT", away:"SEA", awayName:"Seattle Seahawks", home:"ARI", homeName:"Arizona Cardinals",
-      market:"SEA -3.5", total:"46.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"SEA -4.5", total:"41.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"Arizona's Week 1 upset deserves respect. Seattle may be better, but -5.5 on the road in the division is a meaningful ask.",
       why:["Arizona showed enough competence in Week 1 that preseason assumptions need to be updated carefully.","Seattle laying more than a field goal on the road creates room for a home-dog thesis.","We need to distinguish sustainable Arizona offense from one-game variance.","Divisional familiarity and late-game backdoor potential both matter at this spread."],
       watch:["ARI OL/secondary","SEA offensive injuries","Any move to +6","Turnover regression"],
@@ -132,7 +133,7 @@ window.dashboardData = {
     },
     {
       id:"mia-sf", day:"Sun", time:"3:25 PM CT", away:"MIA", awayName:"Miami Dolphins", home:"SF", homeName:"San Francisco 49ers",
-      market:"SF -12.5", total:"47.5", status:"PASS", confidence:"Low", audit:"Preliminary",
+      market:"SF -13.5", total:"45.5", status:"PASS", confidence:"Low", audit:"Preliminary",
       quick:"San Francisco is far stronger on paper, but nearly two touchdowns is a tax. We need extraordinary evidence to lay it.",
       why:["Miami's Week 1 performance was poor enough to tempt an emotional fade.","The market already expresses that pessimism with a massive spread.","Large favorites can dominate a game without covering if pace slows or backups enter late.","Unless injuries make Miami even less functional, the price is the biggest story."],
       watch:["MIA QB/OL","SF skill-player availability","Potential Miami team total","Spread crossing 13/14"],
@@ -162,7 +163,7 @@ window.dashboardData = {
     },
     {
       id:"nyg-lar", day:"Mon", time:"7:15 PM CT", away:"NYG", awayName:"New York Giants", home:"LAR", homeName:"Los Angeles Rams",
-      market:"LAR -7.5", total:"45.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"LAR -7.5", total:"47.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"The Giants won outright in Week 1 while the Rams lost. More than a touchdown is enough to make New York worth investigating.",
       why:["New York's Week 1 win may represent real improvement rather than pure variance.","The Rams being favored is reasonable; the question is whether 7.5 is too much.","Monday gives us the longest injury-information runway of the week, so there is no reason to rush.","A spread above seven materially increases the value of the underdog if our model sees a competitive game."],
       watch:["NYG OL","LAR offensive injuries","Can we hold +7.5 or find +8?","Monday weather"],
