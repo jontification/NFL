@@ -1,24 +1,24 @@
 window.dashboardData = {
   currentWeek: 2,
   season: 2026,
-  lastUpdated: "Wednesday, Sep 16, 2026 · 6:45 PM CT Update",
+  lastUpdated: "Thursday, Sep 17, 2026 · 4:12 PM CT Update",
   seasonRecord: { wins: 3, losses: 0, pushes: 0, units: 2.7, avgClv: 1.4, roi: 27 },
   games: [
     {
       id:"det-buf", day:"Thu", time:"7:15 PM CT", away:"DET", awayName:"Detroit Lions", home:"BUF", homeName:"Buffalo Bills",
-      market:"BUF -4.5", total:"54.5", status:"WATCH", confidence:"Medium-High", audit:"Final injury report complete",
-      quick:"Detroit will be without starting G Christian Mahogany and T Blake Miller, with top C Cade Mays already on IR. Buffalo is the cleaner side, but the move from -3 to -4.5 has already captured much of the injury edge.",
+      market:"BUF -5.5", total:"54.5", status:"PASS", confidence:"Medium", audit:"Final injury report complete; market re-priced",
+      quick:"Detroit will be without starting G Christian Mahogany and T Blake Miller, with top C Cade Mays already on IR. Buffalo is the cleaner side, but the market has now moved from -3 to -5.5, which has consumed the value we were watching.",
       why:[
         "Detroit's OL is the main reason this game is on the radar. Multiple absences or limitations could materially change protection and run efficiency.",
         "Buffalo has home-field, the more stable quarterback environment, and a defense capable of exploiting protection breakdowns.",
-        "The price matters: Buffalo becomes less attractive if injury news pushes the spread materially beyond the current range.",
+        "The price has become the deciding factor: Buffalo moved from -3 to -5.5, so the injury edge is now largely reflected in the market.",
         "Thursday compresses the information cycle, so this game gets a special final audit after the last injury report and again near kickoff."
       ],
       watch:["Detroit OL final designations", "Buffalo defensive availability", "Spread movement through -4.5/-5", "Wind and precipitation"],
       matchup:["BUF pass rush vs DET protection", "DET run game vs BUF front", "Josh Allen scramble/extended-play value", "Short-week recovery"],
       injuryNote:"This is the only Week 2 game with a mature injury picture right now. Final designations can upgrade or downgrade the side quickly.",
-      marketNote:"WATCH the number. Injury confirmation matters only if the market has not already fully priced it in.",
-      bottom:"WATCH Buffalo -4.5. I would BET at -4 or better; at -4.5 the remaining edge is modest after the market move. Recheck weather and inactives Thursday."
+      marketNote:"The market has priced the injury edge aggressively. At -5.5 we are no longer willing to chase Buffalo.",
+      bottom:"PASS Buffalo -5.5. The football thesis still favors Buffalo, but the price moved through our acceptable range. Revisit only if the number falls back toward -4 or better."
     },
     {
       id:"phi-ten", day:"Sun", time:"12:00 PM CT", away:"PHI", awayName:"Philadelphia Eagles", home:"TEN", homeName:"Tennessee Titans",
@@ -122,7 +122,7 @@ window.dashboardData = {
     },
     {
       id:"sea-ari", day:"Sun", time:"3:25 PM CT", away:"SEA", awayName:"Seattle Seahawks", home:"ARI", homeName:"Arizona Cardinals",
-      market:"SEA -5.5", total:"46.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
+      market:"SEA -3.5", total:"46.5", status:"WATCH", confidence:"Medium", audit:"Preliminary",
       quick:"Arizona's Week 1 upset deserves respect. Seattle may be better, but -5.5 on the road in the division is a meaningful ask.",
       why:["Arizona showed enough competence in Week 1 that preseason assumptions need to be updated carefully.","Seattle laying more than a field goal on the road creates room for a home-dog thesis.","We need to distinguish sustainable Arizona offense from one-game variance.","Divisional familiarity and late-game backdoor potential both matter at this spread."],
       watch:["ARI OL/secondary","SEA offensive injuries","Any move to +6","Turnover regression"],
@@ -185,40 +185,42 @@ window.dashboardData = {
     {team:"Atlanta", player:"Tua Tagovailoa", status:"DNP", severity:"high", note:"Michael Penix Jr. practiced fully; QB hierarchy remains market-moving."},
     {team:"Jacksonville", player:"Brian Thomas Jr. / Jakobi Meyers", status:"Limited", severity:"medium", note:"Both starting WRs limited; monitor Thursday direction."},
     {team:"Washington", player:"Frankie Luvu", status:"DNP", severity:"high", note:"Part of a broader Commanders front-seven injury cluster."},
-    {team:"Kansas City", player:"Josh Simmons", status:"DNP", severity:"high", note:"Starting tackle; important against Indianapolis pass rush."}
+    {team:"Kansas City", player:"Josh Simmons", status:"DNP", severity:"high", note:"Starting tackle; important against Indianapolis pass rush."},
+    {team:"Seattle", player:"Sam Darnold", status:"OUT", severity:"high", note:"Starting QB ruled out; Drew Lock will start at Arizona. Market collapsed from roughly SEA -10 opener to around -3.5/-4."},
+    {team:"Houston", player:"Nico Collins", status:"Hamstring concern", severity:"high", note:"Availability for Sunday is in doubt after a practice hamstring injury; major variable for HOU-CIN."}
   ],
   props:[
     {
       id:"kincaid-rec-yds", rank:1, player:"Dalton Kincaid", pos:"TE", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
-      market:"Receiving Yards", side:"OVER", line:"49.5", price:"-120", projection:"56-61", edge:"~+7 to +12 yds", confidence:"High", status:"BET", audit:"Role/context audit complete",
-      quick:"OVER 49.5 receiving yards. Kincaid had 5 catches for 130 yards in Week 1, Detroit allowed 87 yards and 2 TDs to Saints tight ends, and Buffalo offers a strong passing environment. We like the threshold while it remains below the upper 50s.",
+      market:"Receiving Yards", side:"OVER", line:"51.5", price:"market varies", projection:"56-61", edge:"~+4.5 to +9.5 yds", confidence:"High", status:"BET", audit:"Role/context audit complete",
+      quick:"OVER 51.5 receiving yards. The market has moved up from 49.5, but Kincaid still has a concentrated receiving role and a favorable Detroit tight-end matchup. The edge is smaller now, so price discipline matters more.",
       why:[
         "Kincaid caught 5 passes for 130 yards in Week 1, and no other Bills tight end saw more than one target. That supports a concentrated receiving role rather than treating the 130 yards as a random box-score spike.",
         "Detroit allowed 87 receiving yards and two touchdowns to Saints tight ends in Week 1, which gives us a specific positional matchup reason to expect Buffalo to involve Kincaid.",
         "Buffalo's overall passing environment is favorable, and Detroit's secondary questions create additional reasons for Josh Allen to keep attacking through the air rather than needing a run-heavy script.",
-        "The attractive part of the market is the threshold: 49.5 keeps the requirement below 50 yards. Our current rough projection range is 56-61 yards.",
+        "The market has moved to 51.5 from 49.5. Our current rough projection range remains 56-61 yards, leaving a smaller but still playable edge if the juice stays reasonable.",
         "Price discipline matters. We would not chase this prop if the yardage line moves into the upper 50s or the juice becomes materially more expensive."
       ],
       role:["Primary receiving TE in Week 1","Five catches / 130 yards on concentrated TE usage","No current role-reduction signal identified","Current role weighted more heavily than career average"],
       matchup:["Detroit TE coverage","Single-high tendencies","Allen efficiency","Competitive/high-total game environment"],
       risks:["Week 1 yardage was boosted by explosive plays","Buffalo spreads targets across WRs","Detroit changes coverage structure","Line moves materially before kickoff"],
-      bottom:"BET: Dalton Kincaid OVER 49.5 receiving yards at roughly -120 or better. Recheck Thursday inactive news before lock."
+      bottom:"BET: Dalton Kincaid OVER 51.5 receiving yards if the price is roughly -125 or better. Do not chase if the line climbs into the mid-to-upper 50s."
     },
     {
       id:"allen-rush-att", rank:2, player:"Josh Allen", pos:"QB", team:"BUF", game:"DET @ BUF", day:"Thu", time:"7:15 PM CT",
-      market:"Rushing Attempts", side:"OVER", line:"6.5", price:"-125", projection:"7.5-8.0", edge:"~+1 attempt", confidence:"Medium-High", status:"BET", audit:"Role/context audit complete",
-      quick:"OVER 6.5 rushing attempts. Allen averaged 8.2 carries over his final 10 games last season, cleared this number in 7 of 10, and had 11 carries vs Detroit in their 2024 meeting. This is a usage-based bet on his designed runs + scrambles.",
+      market:"Rushing Attempts", side:"OVER", line:"7.5", price:"market varies", projection:"7.5-8.0", edge:"~0 to +0.5 attempt", confidence:"Low", status:"PASS", audit:"Role/context audit complete",
+      quick:"The market moved Josh Allen rushing attempts from 6.5 to 7.5. Our usage thesis still makes sense, but the key-number edge is gone, so this is now a PASS and is intentionally hidden from the public shortlist.",
       why:[
         "Recent usage is the core of the thesis: Allen averaged 8.2 rushing attempts over his final 10 games last season and cleared 6.5 attempts in seven of those 10.",
         "This is not a bet that requires Buffalo to trail. Designed quarterback runs and scrambles are structural parts of Buffalo's offense, so Allen can reach the number in multiple game scripts.",
         "Detroit has allowed meaningful rushing-attempt volume to mobile quarterbacks, and Allen himself logged 11 carries when Buffalo faced Detroit in 2024.",
         "We prefer attempts to rushing yards because this is fundamentally a usage bet. A short scramble counts the same toward the wager as a long designed run, making the thesis less dependent on rushing efficiency.",
-        "Price discipline matters: 6.5 is the attractive threshold. If the market moves this to 7.5, the edge becomes much thinner and we would likely PASS rather than chase."
+        "Price discipline decided this one: 6.5 was the attractive threshold. At 7.5, our projected usage no longer creates enough margin to justify a bet."
       ],
       role:["Stable dual-threat QB role","Designed runs plus scrambles","No workload competition issue","Recent usage weighted more heavily than full-career mean"],
       matchup:["Detroit contain discipline","Man/single-high scramble lanes","Expected competitive game","Red-zone QB run equity"],
       risks:["Buffalo wins comfortably without Allen needing to run","Kneel-down stat treatment varies by book","Detroit uses more zone and keeps eyes on QB","Juice rises beyond acceptable range"],
-      bottom:"BET: Josh Allen OVER 6.5 rushing attempts around -125 or better. Avoid chasing if the line moves to 7.5."
+      bottom:"PASS at 7.5 rushing attempts. We liked 6.5; we are not chasing the move."
     }
   ],
   recommendationLog:[
