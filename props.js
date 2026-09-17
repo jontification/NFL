@@ -1,5 +1,6 @@
 const d=window.dashboardData;
-const props=(d.props||[]).filter(p=>p.status!=="PASS" && (p.confidence==="High" || p.confidence==="Medium"));
+const allowedConfidence=["High","Medium-High","Medium"];
+const props=(d.props||[]).filter(p=>p.status!=="PASS" && allowedConfidence.includes(p.confidence));
 const counts=s=>props.filter(p=>p.status===s).length;
 const kpis=[['TOP PROPS',props.length,'Curated shortlist'],['BET',counts('BET'),'Full audit cleared'],['WATCH',counts('WATCH'),'High-interest, audit open'],['ROLE AUDITED',props.filter(p=>String(p.audit||'').toLowerCase().includes('role')).length,'Context checked']];
 document.getElementById('propKpis').innerHTML=kpis.map((x,i)=>`<div class="kpi"><div class="label">${x[0]}</div><strong class="${i===1?'positive':''}">${x[1]}</strong><div class="label">${x[2]}</div></div>`).join('')+`<div class="kpi key"><div><div class="label" style="margin-bottom:9px">Props Board Rule</div></div><div class="legend"><span class="dot bet"></span><b>BET</b></div><div class="legend"><span class="dot watch"></span><b>WATCH</b></div><div class="label">Only highest-confidence candidates appear</div></div>`;

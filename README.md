@@ -26,3 +26,7 @@ Early reads are not official bets until the full audit is complete.
 
 ## Player Props
 The dashboard now includes `props.html` and `prop.html`, with data-driven prop deep dives and a mandatory Role & Context Audit.
+
+
+## v7 fix
+Player Props shortlist now includes Medium-High confidence recommendations (including Josh Allen OVER 6.5 rushing attempts), and detailed WHY text is synchronized with the live analysis in data.js. Cache-busting version bumped to v7.
