@@ -1,7 +1,7 @@
 window.dashboardData = {
   "currentWeek": 2,
   "season": 2026,
-  "lastUpdated": "Friday, Sep 18, 2026 \u00b7 4:53 PM CT \u00b7 Full Market + Injury + Weather + Prop Audit",
+  "lastUpdated": "Friday, Sep 18, 2026 \u00b7 4:53 PM CT \u00b7 Full Market + Injury + Weather + Prop Audit \u00b7 UX v12 WATCH triggers",
   "marketSource": "FanDuel live reference snapshot Sep 18; injury designations from NFL/team reports; weather refreshed Sep 18",
   "seasonRecord": {
     "wins": 4,
@@ -46,7 +46,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Final Thursday report: Detroit G Christian Mahogany and T Blake Miller are out; D.J. Reed is questionable. Buffalo has Cole Bishop, Ty Johnson and T.J. Sanders questionable.",
       "marketNote": "Current market range is roughly BUF -4.5 (DraftKings) to -5.5 (FanDuel). WATCH at -4.5; PASS at -5.5. Line shopping is materially important here.",
-      "bottom": "WATCH Buffalo only at -4.5 or better. PASS at -5.5. The football thesis favors Buffalo, but the price determines whether there is value."
+      "bottom": "WATCH Buffalo only at -4.5 or better. PASS at -5.5. The football thesis favors Buffalo, but the price determines whether there is value.",
+      "actionableIf": "Completed game \u2014 no longer actionable.",
+      "killsPlayIf": "Completed game \u2014 archive the original price decision rather than retroactively changing it."
     },
     {
       "id": "phi-ten",
@@ -82,7 +84,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Thursday report: Eagles Jalen Carter and Cooper DeJean DNP; Jonathan Greenard limited. Tennessee had a much shorter report.",
       "marketNote": "Current price remains PHI -7. Seven is a key threshold, so we need a clearly larger fair-line edge before betting.",
-      "bottom": "WATCH Philadelphia -7. Better team baseline, but the Thursday defensive injury report prevents an upgrade."
+      "bottom": "WATCH Philadelphia -7. Better team baseline, but the Thursday defensive injury report prevents an upgrade.",
+      "actionableIf": "PHI -6.5 or better; or PHI -7 only if the key Eagles defensive/trench availability clears with no new Tennessee upgrade.",
+      "killsPlayIf": "PHI -7.5 or worse, or meaningful Eagles defensive absences remain/worsen."
     },
     {
       "id": "pit-ne",
@@ -118,7 +122,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: Pittsburgh CB Joey Porter Jr. OUT; WR Michael Pittman and OT Troy Fautanu questionable. New England OT Dametrious Crownover OUT; Ben Brown, Dre\u2019Mont Jones and Carlton Davis questionable.",
       "marketNote": "NE -4.5 / 41.5. Pittsburgh +4.5 remains interesting but not clean enough to lock.",
-      "bottom": "WATCH Pittsburgh +4.5. Friday did not eliminate enough injury uncertainty."
+      "bottom": "WATCH Pittsburgh +4.5. Friday did not eliminate enough injury uncertainty.",
+      "actionableIf": "PIT +5.5 or better with the Steelers' protection situation stable enough to avoid a material OL downgrade.",
+      "killsPlayIf": "PIT +4 or worse, or a late Steelers OL/QB-protection downgrade materially raises the pressure mismatch."
     },
     {
       "id": "min-chi",
@@ -154,7 +160,12 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: Kyler Murray and Jauan Jennings OUT; Brian O\u2019Neill questionable. Chicago has no players carrying an Out/Doubtful/Questionable designation.",
       "marketNote": "CHI -4.5 / 47.5. PASS on Minnesota side. WATCH the UNDER 47.5 because of the current wind/rain forecast.",
-      "bottom": "PASS Minnesota +4.5. WATCH UNDER 47.5 pending Sunday weather confirmation."
+      "bottom": "PASS Minnesota +4.5. WATCH UNDER 47.5 pending Sunday weather confirmation.",
+      "secondaryWatch": {
+        "angle": "UNDER 47.5",
+        "actionableIf": "Sunday wind remains roughly 18+ mph and the market offers 48 or better.",
+        "killsPlayIf": "Wind falls below roughly 12 mph, precipitation threat fades materially, or the total is bet down to 46.5 or lower."
+      }
     },
     {
       "id": "car-atl",
@@ -226,7 +237,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: GB DT Warren Brinson OUT, DT Javon Hargrave doubtful; Aaron Banks, Zach Tom, Lukas Van Ness and Benjamin St-Juste questionable. NYJ: Minkah Fitzpatrick, Joseph Ossai, Kene Nwangwu and Omar Cooper Jr. OUT; Will McDonald IV questionable.",
       "marketNote": "GB -3.5 / 44.5. The earlier Jets +4.5 value is gone; at the current number Green Bay is the more interesting side, but GB injury uncertainty keeps it WATCH.",
-      "bottom": "WATCH Green Bay -3.5. Reassess Sunday inactives and wet-weather conditions."
+      "bottom": "WATCH Green Bay -3.5. Reassess Sunday inactives and wet-weather conditions.",
+      "actionableIf": "GB -3 or better with Green Bay's key OL pieces active and the Jets' defensive absences holding.",
+      "killsPlayIf": "GB -4.5 or worse, or Green Bay's OL/DL availability deteriorates materially before kickoff."
     },
     {
       "id": "no-bal",
@@ -298,7 +311,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: Burrow full and expected to play, though officially questionable. Houston: Nico Collins, Ed Ingram, Jadeveon Clowney and Jake Hummel OUT.",
       "marketNote": "HOU -2.5 / 45.5. Cincinnati +2.5 is one of the strongest current dog prices on the board.",
-      "bottom": "WATCH+ Cincinnati +2.5. This is close to BET territory; Sunday Burrow confirmation is the final major gate."
+      "bottom": "WATCH+ Cincinnati +2.5. This is close to BET territory; Sunday Burrow confirmation is the final major gate.",
+      "actionableIf": "Burrow confirmed active, CIN +2.5 or better, and no new Cincinnati OL issue appears.",
+      "killsPlayIf": "Burrow is limited/inactive, the line falls below +2, or Cincinnati develops a new protection problem."
     },
     {
       "id": "cle-tb",
@@ -334,7 +349,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: Cleveland G Teven Jenkins OUT; CB Tyson Campbell questionable. Tampa Bay Jalen McMillan, Jacob Parrish and Miles Killebrew questionable.",
       "marketNote": "TB -8.5 / 41.5. Cleveland\u2019s OL issue supports Tampa, but -8.5 remains an expensive NFL number.",
-      "bottom": "WATCH Tampa Bay -8.5. Matchup edge is real; price remains the objection."
+      "bottom": "WATCH Tampa Bay -8.5. Matchup edge is real; price remains the objection.",
+      "actionableIf": "TB -7.5 or better while Cleveland's OL remains materially compromised.",
+      "killsPlayIf": "TB -9.5 or worse, or Cleveland's OL gets healthier enough that the original mismatch largely disappears."
     },
     {
       "id": "jax-den",
@@ -370,7 +387,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: Jacksonville has no game-status injury designations. Denver WR Marvin Mims Jr. OUT; RB RJ Harvey questionable.",
       "marketNote": "DEN -2.5 / 45.5. Jacksonville +2.5 remains one of the cleaner underdog watches; +3 would be materially better.",
-      "bottom": "WATCH+ Jacksonville +2.5; BET consideration if +3 appears or Sunday inactives improve the matchup further."
+      "bottom": "WATCH+ Jacksonville +2.5; BET consideration if +3 appears or Sunday inactives improve the matchup further.",
+      "actionableIf": "JAX +3 or better with Jacksonville's primary receiving options active and Denver's key skill-position absences persisting.",
+      "killsPlayIf": "JAX +1.5 or worse, or Jacksonville loses a major pass-game piece before kickoff."
     },
     {
       "id": "lv-lac",
@@ -442,7 +461,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Friday: SEA Sam Darnold and Ty Okada OUT. ARI Garrett Williams OUT; multiple guards/DTs/DBs questionable.",
       "marketNote": "SEA -4.5 / 41.5. Darnold\u2019s absence is priced in substantially; Arizona +4.5 is still a watch, not an automatic bet.",
-      "bottom": "WATCH Arizona +4.5. Seattle QB downgrade helps, Arizona injury cluster prevents a lock."
+      "bottom": "WATCH Arizona +4.5. Seattle QB downgrade helps, Arizona injury cluster prevents a lock.",
+      "actionableIf": "ARI +5 or better; or +4.5 if Seattle's backup-QB situation holds and Arizona's OL/DL cluster materially improves.",
+      "killsPlayIf": "ARI +3.5 or worse, or Arizona's trench/secondary injury cluster worsens enough to offset Seattle's QB downgrade."
     },
     {
       "id": "mia-sf",
@@ -550,7 +571,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Thursday: Chiefs Josh Simmons and Chamarri Conner DNP; Chris Jones and L'Jarius Sneed limited. Colts had Alec Pierce, DJ Giddens and Grover Stewart DNP; Anthony Richardson was full.",
       "marketNote": "We do not automatically lay points with Kansas City just because they are clearly superior.",
-      "bottom": "WATCH KC -6.5. The Chiefs are stronger, but the line already reflects that and the injury differential is not clean enough to lay the points yet."
+      "bottom": "WATCH KC -6.5. The Chiefs are stronger, but the line already reflects that and the injury differential is not clean enough to lay the points yet.",
+      "actionableIf": "KC -5.5 or better with the Chiefs' key OL/defensive pieces active and no new Colts personnel edge emerging.",
+      "killsPlayIf": "KC -7 or worse, or Kansas City develops a meaningful OL/defensive downgrade."
     },
     {
       "id": "nyg-lar",
@@ -586,7 +609,9 @@ window.dashboardData = {
       ],
       "injuryNote": "Thursday: Giants Paulson Adebo DNP; Deonte Banks, Andrew Thomas, Francis Mauigoa and others limited. Rams reported no injuries.",
       "marketNote": "+7.5 is meaningfully different from +6.5. Patience is an advantage here.",
-      "bottom": "WATCH Giants +7.5. The number is attractive, but the Rams currently have the cleaner injury profile."
+      "bottom": "WATCH Giants +7.5. The number is attractive, but the Rams currently have the cleaner injury profile.",
+      "actionableIf": "NYG +8 or better with the Giants' core offensive personnel intact.",
+      "killsPlayIf": "NYG +6.5 or worse, or the Giants lose a major QB/OL/skill piece while the Rams remain clean."
     }
   ],
   "injuries": [

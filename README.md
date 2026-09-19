@@ -30,3 +30,7 @@ The dashboard now includes `props.html` and `prop.html`, with data-driven prop d
 
 ## v7 fix
 Player Props shortlist now includes Medium-High confidence recommendations (including Josh Allen OVER 6.5 rushing attempts), and detailed WHY text is synchronized with the live analysis in data.js. Cache-busting version bumped to v7.
+
+## v12 UX rules
+- Every WATCH must state a concrete "Actionable if" trigger and a concrete "Kills the play if" condition.
+- Game detail pages are scroll-first long-form reports rather than tabbed pages.
